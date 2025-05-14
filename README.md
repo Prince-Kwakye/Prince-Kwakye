@@ -1,4 +1,4 @@
-# Hi there, I'm Prince Kwakye! {Cybertron618 was my old username}👋
+# Hi there, I'm Prince Kwakye!👋
 
 I'm a polyglot developer with expertise in:
 
