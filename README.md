@@ -1,8 +1,6 @@
 # Prince Kwakye
 
-Full-stack developer from Ghana, backend-leaning. I build production systems end
-to end — .NET APIs, Angular admin front-ends, and Flutter mobile clients — with
-most of my attention going to the data layer and the failure modes.
+Full-stack developer from Ghana, backend-leaning. I build production systems with .NET, Angular, and Flutter, with a strong focus on reliable APIs, databases, caching, and handling failures.
 
 - **Core stack:** C# / .NET 8+, TypeScript / Angular, Dart / Flutter, PostgreSQL, Redis
 - **Also work in:** Python, Ruby, Golang
