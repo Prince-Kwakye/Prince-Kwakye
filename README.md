@@ -1,39 +1,64 @@
-# Hi there, I'm Prince Kwakye!👋
+# Prince Kwakye
 
-I'm a polyglot developer with expertise in:
+Full-stack developer from Ghana, backend-leaning. I build production systems end
+to end — .NET APIs, Angular admin front-ends, and Flutter mobile clients — with
+most of my attention going to the data layer and the failure modes.
 
-- **Languages:** C#, Python, and Ruby
-- **Interests:** Building innovative software solutions
+- **Core stack:** C# / .NET 8+, TypeScript / Angular, Dart / Flutter, PostgreSQL, Redis
+- **Also work in:** Python, Ruby, Golang
+- **Reach me:** [kwakyeprince088@gmail.com](mailto:kwakyeprince088@gmail.com)
 
-## 🌟 Featured Projects
+---
 
-Here are some of my notable projects:
+## Featured work
 
-1. **Real-Time Satellite Data Visualizer**
-   - **Description:** A Python tool that fetches real-time satellite event data from NASA's EONET API and overlays it on an interactive map with real-time weather updates from OpenWeatherMap.
-   - **Repository:** [Real-Time-Satellite-Data-Visualizer](https://github.com/Prince-Kwakye/Real-Time-Satellite-Data-Visualizer)
+### BizTrack — retail POS & inventory platform
+[biztracksoft.com](https://biztracksoft.com) · source private
 
-2. **DemoUniReg**
-   - **Description:** An API application developed in C# using ASP.NET Core, serving as a backend for a university or educational institution registration system.
-   - **Repository:** [DemoUniReg](https://github.com/Prince-Kwakye/DemoUniReg)
+A multi-tenant point-of-sale and inventory system for Ghanaian retailers, built
+as three clients against one .NET 8 API.
 
-3. **Quantum Morte Carlo**
-   - **Description:** A high-performance numerical integration tool using Quasi-Monte Carlo (QMC) methods like Sobol, Halton, and Latin Hypercube sampling.
-   - **Repository:** [Quantum-Morte-Carlo](https://github.com/Prince-Kwakye/Quantum-Morte-Carlo)
+- **API** — ASP.NET Core with CQRS via MediatR, EF Core 9 on PostgreSQL, and
+  tenant isolation enforced through global query filters. Sales commit in a
+  single transaction with guarded stock deduction, so two cashiers selling the
+  last unit can't oversell. SignalR notifications and cache invalidation are
+  dispatched through an outbox table, so nothing is lost if the process dies
+  mid-write.
+- **Performance** — Redis caching over dashboard and report queries, with
+  explicit invalidation on every mutation that makes a figure stale.
+- **Also** — JWT auth with role-based access, endpoint rate limiting, PDF receipt
+  generation (QuestPDF), Serilog, and an xUnit suite over the sale and refund
+  paths.
+- **Clients** — an Angular admin app (standalone components, server-side
+  DataTables, ApexCharts) and a Flutter mobile app for cashiers.
 
-## 📈 GitHub Stats
+### [Real-Time Satellite Data Visualizer](https://github.com/Prince-Kwakye/Real-Time-Satellite-Data-Visualizer)
+Python tool that pulls live natural-event data from NASA's EONET API and plots it
+on an interactive map, layered with current conditions from OpenWeatherMap. An
+exercise in reconciling two independent feeds with different update cadences.
 
-![Prince's GitHub stats](https://github-readme-stats.vercel.app/api?username=Prince-Kwakye&show_icons=true&theme=radical)
+### [DemoUniReg](https://github.com/Prince-Kwakye/DemoUniReg)
+ASP.NET Core REST API backing a university registration system — course
+enrolment, student records, and the scheduling constraints between them.
 
-## 🔗 Connect with Me
+### [Quantum Monte Carlo](https://github.com/Prince-Kwakye/Quantum-Morte-Carlo)
+High-performance numerical integration using quasi-Monte Carlo methods — Sobol,
+Halton, and Latin hypercube sampling — with convergence compared against
+standard pseudo-random sampling.
 
-- **GitHub:** [Prince-Kwakye](https://github.com/Prince-Kwakye)
-- **Email:** [kwakyeprince088@gmail.com](mailto:kwakyeprince088@gmail.com)
+---
 
-*Feel free to reach out if you're interested in collaborating or discussing technology!*
+## GitHub
 
-<!---
-Cybertron618/Cybertron618 is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+<p align="left">
+  <img height="150"
+       alt="Prince Kwakye's GitHub stats"
+       src="https://github-readme-stats.vercel.app/api?username=Prince-Kwakye&show_icons=true&include_all_commits=true&hide_border=true&bg_color=00000000&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff" />
+  <img height="150"
+       alt="Contribution streak"
+       src="https://streak-stats.demolab.com?user=Prince-Kwakye&hide_border=true&background=00000000&stroke=8b949e&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e&currStreakNum=8b949e&sideNums=8b949e" />
+</p>
 
+---
+
+Open to collaboration and to talking shop — email is best.
