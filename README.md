@@ -51,12 +51,18 @@ standard pseudo-random sampling.
 ## GitHub
 
 <p align="left">
-  <img height="150"
-       alt="Prince Kwakye's GitHub stats"
-       src="https://github-readme-stats.vercel.app/api?username=Prince-Kwakye&show_icons=true&include_all_commits=true&hide_border=true&bg_color=00000000&title_color=58a6ff&text_color=8b949e&icon_color=58a6ff" />
-  <img height="150"
+  <img height="180"
+       alt="Prince Kwakye's GitHub profile summary"
+       src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=Prince-Kwakye&theme=github_dark" />
+</p>
+
+<p align="left">
+  <img height="165"
        alt="Contribution streak"
        src="https://streak-stats.demolab.com?user=Prince-Kwakye&hide_border=true&background=00000000&stroke=8b949e&ring=58a6ff&fire=58a6ff&currStreakLabel=58a6ff&sideLabels=8b949e&dates=8b949e&currStreakNum=8b949e&sideNums=8b949e" />
+  <img height="165"
+       alt="Repos per language"
+       src="https://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=Prince-Kwakye&theme=github_dark" />
 </p>
 
 ---
